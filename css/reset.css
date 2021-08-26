@@ -1,0 +1,85 @@
+:root{
+    /*Cores principais do site*/
+    --color-1:#fff;
+    --color-2:#141414;
+    --style-1:#f03018;
+    --style-2:#06aa48;
+    --style-3:#e67d00;
+    --style-4:#fb0234;
+    --style-5:#33333;
+    --style-6:#0669DE; 
+    --style-7:#777;
+    --style-8:#eee;
+    /* Fonte do projeto*/
+    
+    --font:'Open Sans', sans-serif!important;
+    /*Tamanhos*/
+    --text:14px;
+    --text-md:16px;
+    --tit-lg: 44px;
+    --tit-md: 24px;
+    --tit-sm: 18px;
+}
+
+body{
+    font-family: var(--font);
+    font-size: var(--text);
+    margin: 0;
+    padding:0;
+    background-color: var(--color-1);
+}
+.style-1{color:var(--style-1);}
+.style-2{color:var(--style-2);}
+.style-3{color:var(--style-3);}
+.style-4{color:var(--style-4);}
+.style-5{color:var(--style-5);}
+
+.btn{
+    display: block;
+    width: 100%;
+    max-width: max-content;
+    background-color: var(--style-6);
+    color: var(--color-1);
+    border-radius: 4px;
+    padding: 8px 20px;
+    text-transform: uppercase;
+}
+.btn:hover{
+    color:var(--color-1);
+    opacity: .7;
+
+}
+
+.destaque .col-lg-6{
+    position:relative;
+
+}
+.destaque .col-lg-6::after{
+    position:absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: var(--style-8);
+    top:0;
+    right: 15px;
+    
+}
+
+.col-lg-3 span{
+    font-size: var(--text-md);
+}
+.col-lg-3  h2{
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -.03em
+    font-weight: 700;
+    order: 3;
+    width: 100%;
+    vertical-align:baseline;
+
+}
+.col-lg-3 .box2 h2 span{
+    display: flex;
+
+}
+
